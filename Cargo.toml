@@ -1,0 +1,6 @@
+[workspace]
+
+members = [
+    "_1_two_sum"
+]
+
