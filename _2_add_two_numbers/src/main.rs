@@ -22,7 +22,7 @@ pub fn add_two_numbers(
     let mut s = 0;
     let mut sum: Option<Box<ListNode>> = Some(Box::new(ListNode::new(0)));
     let mut node = sum.as_mut();
-    while c1.is_some() || c2.is_some() {
+    while c1.is_some() || c2.is_some() || s != 0 {
         if let Some(c) = c1 {
             s += c.val;
             c1 = c.next;
@@ -39,11 +39,6 @@ pub fn add_two_numbers(
         let n = node.unwrap();
         n.next = Some(Box::new(ListNode::new(d)));
         node = n.next.as_mut();
-    }
-
-    if s != 0 {
-        let n = node.unwrap();
-        n.next = Some(Box::new(ListNode::new(s)));
     }
 
     sum.unwrap().next
