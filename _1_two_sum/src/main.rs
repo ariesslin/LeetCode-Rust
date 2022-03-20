@@ -30,3 +30,5 @@ mod tests {
         assert_eq!(result, vec![0, 1]);
     }
 }
+
+/*心得：有时用hashmap可以优化时间复杂度*/

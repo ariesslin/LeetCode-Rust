@@ -1,4 +1,6 @@
 fileignoreconfig:
 - filename: _1_two_sum/Cargo.toml
   checksum: 2d597fe8d30b2f80199a51723275c87edb138ae46cdd392561bbc284b303cb6b
+- filename: _2_add_two_numbers/Cargo.toml
+  checksum: 85c06e9fdfb26d5b63d363b4a244e331b3f3eb4f1806238988de3e0b94a06947
 version: "1.0"
